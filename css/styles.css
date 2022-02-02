@@ -3,3 +3,68 @@
 	--liquid:			#00D;
 	--gas:				#900;
 }
+
+html, body {
+	font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body {
+	margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+a {
+	background-color:transparent;
+}
+
+a:active, a:hover {
+	outline-width:0;
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.horizontal li a.active {
+    background-color: #04AA6D;
+}
+
+ul.horizontal li.rightli {
+    float: right;
+}

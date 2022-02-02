@@ -25,15 +25,3 @@ class Element {
         this.isotopes = data[isotopes];
     }
 }
-
-$(document).ready(function () {
-    var json = $.getJSON({'url': "js/elements.json", 'async': false});  
-    
-
-    //The next line of code will filter out all the unwanted data from the object.
-    json = JSON.parse(json.responseText); 
-
-    //You can now access the json variable's object data like this json.a and json.c
-    //document.write(json.a);
-    console.log(json);
-});
