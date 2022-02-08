@@ -20,13 +20,58 @@
 </head>
 
 <body>
-    <ul class="horizontal">
-        <li><a class="active" href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-
-        <li class="rightli"><a href="">4</a></li>
-    </ul>
+    <header>
+        <input type="checkbox" id="Menu" name="Menu" class="Button Flat MenuButton">
+        <label for="Menu">
+        </label>
+        <input type="radio" id="ResetTab" name="Tab" class="Logo"><label for="ResetTab"><a href="#"><img src="icon/ptable-logo.svg" alt="Ptable"></a></label>
+        <nav>
+            <input type="radio" id="PropertyTab" name="Tab" checked="">
+            <label for="PropertyTab">
+                <a href="#Properties">Properties</a>
+            </label>
+            <input type="radio" id="ElectronTab" name="Tab">
+            <label for="ElectronTab">
+                <a href="#Electrons">Electrons</a>
+            </label>
+            <input type="radio" id="IsotopeTab" name="Tab">
+            <label for="IsotopeTab">
+                <a href="#Isotopes">Isotopes</a>
+            </label>
+            <input type="radio" id="CompoundTab" name="Tab">
+            <label for="CompoundTab">
+                <a href="#Compounds">Compounds</a>
+            </label>
+        </nav>
+        <input type="checkbox" id="Wide" name="Wide" class="Button Raised WideButton">
+        <label for="Wide">
+        </label>
+        <input type="radio" id="TopbarToggle" name="Layout" class="Button Raised Left Toggle" checked="">
+        <label for="TopbarToggle">
+        </label>
+        <input type="radio" id="SidebarToggle" name="Layout" class="Button Raised Right Toggle">
+        <label for="SidebarToggle">
+        </label>
+        <input type="checkbox" id="DarkButton" name="Dark" class="Button Raised">
+        <label for="DarkButton">
+        </label>
+        <input type="checkbox" id="SearchButton" class="Button Flat" name="Search">
+        <label for="SearchButton">
+            <svg viewBox="-50 -50 100 100" class="Magnify">
+                <title>Search</title>
+                <style>
+                    .Magnify *	{ transition: all 0.6s cubic-bezier(0.2,1,0.3,1); }
+                    :checked + label &gt; .Magnify .Circle	{ cx: 0; cy: 0; ry: 0.1; rx: 40; transform: rotate(-45deg); }
+                    :checked + label &gt; .Magnify .Line	{ cx: 0; cy: 0; rx: 40; transform: rotate(45deg) !important; transform-origin: 0 0 !important; }
+                </style>
+                <g>
+                    <ellipse class="Circle" cx="-10" cy="-10" rx="25" ry="25" fill="none"></ellipse>
+                    <ellipse class="Line" cx="18.84" cy="21.34" rx="17.64" style="transform: rotate(50.8deg); transform-origin: 18.84% 21.34%;" ry="0.1"></ellipse>
+                </g>
+            </svg>
+        </label>
+    </header>
+    
     <div class="Parentheses" id="Parentheses">For elements with no stable isotopes, the mass number of the isotope with the longest half-life is in parentheses.</div>
 
 
